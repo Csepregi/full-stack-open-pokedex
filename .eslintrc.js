@@ -14,8 +14,9 @@ module.exports = {
   },
   env: {
     "cypress/globals": true,
+    "jest/globals": true,
   },
-  plugins: ["cypress"],
+  plugins: ["cypress", "jest"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
