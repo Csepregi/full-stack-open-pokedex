@@ -12,9 +12,10 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["react", "jest"],
+  plugins: ["react", "jest", "cypress"],
   globals: {
     process: true,
+    "cypress/globals": true,
   },
   rules: {
     indent: ["error", 2],
