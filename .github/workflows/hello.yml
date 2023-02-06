@@ -12,4 +12,7 @@ jobs:
     steps:
       - name: Say hello
         run: |
-          echo "Hello World!" date ls
+          echo "Hello World!",
+      - name: now it is 
+        run: |
+            date ls
