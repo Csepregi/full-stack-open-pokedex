@@ -12,6 +12,10 @@ module.exports = {
   globals: {
     process: true,
   },
+  env: {
+    "cypress/globals": true,
+  },
+  plugins: ["cypress"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
