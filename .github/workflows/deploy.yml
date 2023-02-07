@@ -17,6 +17,7 @@ jobs:
         run: npm install
       - name: lint
         run: npm run eslint
+
       name: Fly Deploy
         on:
         push:
@@ -33,3 +34,4 @@ jobs:
           - uses: superfly/flyctl-actions/setup-flyctl@master
           - run: flyctl deploy --remote-only
               
+
