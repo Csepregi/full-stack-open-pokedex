@@ -18,7 +18,7 @@ jobs:
       - name: lint
         run: npm run eslint
 
-      name: Fly Deploy
+      - name: Fly Deploy
         on:
         push:
         branches:
