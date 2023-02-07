@@ -19,9 +19,9 @@ jobs:
         run: npm run eslint
       - name: Fly Deploy
         on:
-        push:
-        branches:
-          - master
+          push:
+            branches:
+              - master
         env:
         FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
         jobs:
