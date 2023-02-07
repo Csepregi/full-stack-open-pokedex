@@ -17,7 +17,6 @@ on:
           run: npm install
         - name: lint
           run: npm run eslint
-
         - name: Fly Deploy
           on:
           push:
